@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqK-9A-teU" customClass="HorseStoryboardView" customModule="UIKitDemo" customModuleProvider="target">
+                                <rect key="frame" x="10" y="323" width="394" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hest" translatesAutoresizingMaskIntoConstraints="NO" id="YBf-MU-aZT">
+                                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="NUI-rV-5eR"/>
+                                            <constraint firstAttribute="height" constant="100" id="x8p-qj-ok2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8YG-BE-dlN">
+                                        <rect key="frame" x="120" y="29.5" width="264" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dette er en hest." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIq-g6-gVM">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Det er mange som den, men denne er min. Uten hesten min er jeg ingenting." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW2-As-fR7">
+                                                <rect key="frame" x="0.0" y="30.5" width="264" height="30.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8YG-BE-dlN" secondAttribute="bottom" constant="10" id="9hs-VG-wOv"/>
+                                    <constraint firstItem="8YG-BE-dlN" firstAttribute="leading" secondItem="YBf-MU-aZT" secondAttribute="trailing" constant="10" id="Jff-NX-oOb"/>
+                                    <constraint firstItem="YBf-MU-aZT" firstAttribute="leading" secondItem="mqK-9A-teU" secondAttribute="leading" constant="10" id="YHa-Yt-O10"/>
+                                    <constraint firstAttribute="trailing" secondItem="8YG-BE-dlN" secondAttribute="trailing" constant="10" id="ZuU-Pw-XlF"/>
+                                    <constraint firstItem="8YG-BE-dlN" firstAttribute="centerY" secondItem="mqK-9A-teU" secondAttribute="centerY" id="ags-Py-d2t"/>
+                                    <constraint firstItem="8YG-BE-dlN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mqK-9A-teU" secondAttribute="top" constant="10" id="k0k-GC-W1w"/>
+                                    <constraint firstItem="YBf-MU-aZT" firstAttribute="top" secondItem="mqK-9A-teU" secondAttribute="top" constant="10" id="pZu-Vi-MzW"/>
+                                    <constraint firstAttribute="bottom" secondItem="YBf-MU-aZT" secondAttribute="bottom" constant="10" id="s45-is-ZOM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="YBf-MU-aZT" id="mGc-zS-Qde"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interface-builder view:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiO-OE-xNP">
+                                <rect key="frame" x="20" y="294.5" width="171.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmatic view:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1c-6w-tlx">
+                                <rect key="frame" x="20" y="463" width="150.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mqK-9A-teU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="38r-Bt-drr"/>
+                            <constraint firstItem="mqK-9A-teU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="AHA-BL-ugE"/>
+                            <constraint firstItem="mqK-9A-teU" firstAttribute="top" secondItem="eiO-OE-xNP" secondAttribute="bottom" constant="8" symbolic="YES" id="CbN-Gk-LD0"/>
+                            <constraint firstItem="F1c-6w-tlx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NNP-8A-iWM"/>
+                            <constraint firstItem="eiO-OE-xNP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RvH-Ma-ObY"/>
+                            <constraint firstItem="mqK-9A-teU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-70" id="byq-zY-GPa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mqK-9A-teU" secondAttribute="trailing" constant="10" id="hiI-xu-aKp"/>
+                            <constraint firstItem="F1c-6w-tlx" firstAttribute="top" secondItem="mqK-9A-teU" secondAttribute="bottom" constant="20" id="iom-Ib-APH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="horseStoryboardView" destination="mqK-9A-teU" id="sez-sI-KrO"/>
+                        <outlet property="programmaticLabel" destination="F1c-6w-tlx" id="oOT-4f-ewa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hest" width="900" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

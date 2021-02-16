@@ -1,16 +1,8 @@
-//
-//  ContentView.swift
-//  ForseDemo
-//
-//  Created by Joakim Stien on 16/02/2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HorseView()
     }
 }
 
