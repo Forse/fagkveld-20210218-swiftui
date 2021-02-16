@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F53ADC0F25DC3A16008050CC /* ForseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC0E25DC3A16008050CC /* ForseDemoApp.swift */; };
-		F53ADC1125DC3A16008050CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC1025DC3A16008050CC /* ContentView.swift */; };
 		F53ADC1325DC3A18008050CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53ADC1225DC3A18008050CC /* Assets.xcassets */; };
 		F53ADC1625DC3A18008050CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53ADC1525DC3A18008050CC /* Preview Assets.xcassets */; };
-		F53ADC2225DC3AB3008050CC /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC2125DC3AB3008050CC /* HorseView.swift */; };
 		F53ADC4C25DC3BBE008050CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC4B25DC3BBE008050CC /* AppDelegate.swift */; };
 		F53ADC4E25DC3BBE008050CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC4D25DC3BBE008050CC /* SceneDelegate.swift */; };
 		F53ADC5025DC3BBE008050CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC4F25DC3BBE008050CC /* ViewController.swift */; };
@@ -20,12 +18,37 @@
 		F53ADC5825DC3BBF008050CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53ADC5625DC3BBF008050CC /* LaunchScreen.storyboard */; };
 		F53ADC6225DC3BD7008050CC /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC6125DC3BD7008050CC /* HorseView.swift */; };
 		F53ADC6825DC40C5008050CC /* HorseStoryboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC6725DC40C5008050CC /* HorseStoryboardView.swift */; };
+		F5E66DDA25DC51C30058449B /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC2125DC3AB3008050CC /* HorseView.swift */; };
+		F5E66DF125DC532E0058449B /* BindingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E66DF025DC532E0058449B /* BindingDemoView.swift */; };
+		F5E66DF425DC537A0058449B /* SuperBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E66DF325DC537A0058449B /* SuperBasicView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5E66D8825DC509B0058449B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E66DC325DC50EB0058449B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F53ADC0B25DC3A16008050CC /* ForseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53ADC0E25DC3A16008050CC /* ForseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForseDemoApp.swift; sourceTree = "<group>"; };
-		F53ADC1025DC3A16008050CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F53ADC1225DC3A18008050CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F53ADC1525DC3A18008050CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F53ADC1725DC3A18008050CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +63,8 @@
 		F53ADC5925DC3BBF008050CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53ADC6125DC3BD7008050CC /* HorseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseView.swift; sourceTree = "<group>"; };
 		F53ADC6725DC40C5008050CC /* HorseStoryboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseStoryboardView.swift; sourceTree = "<group>"; };
+		F5E66DF025DC532E0058449B /* BindingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingDemoView.swift; sourceTree = "<group>"; };
+		F5E66DF325DC537A0058449B /* SuperBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperBasicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +91,7 @@
 				F53ADC0D25DC3A16008050CC /* ForseDemo */,
 				F53ADC4A25DC3BBE008050CC /* UIKitDemo */,
 				F53ADC0C25DC3A16008050CC /* Products */,
+				F5E66DC825DC510D0058449B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,19 +123,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F53ADC1E25DC3A3E008050CC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F53ADC1025DC3A16008050CC /* ContentView.swift */,
-				F53ADC2125DC3AB3008050CC /* HorseView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F53ADC1F25DC3A48008050CC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F53ADC1E25DC3A3E008050CC /* Views */,
+				F5E66DE825DC52370058449B /* Views */,
 				F53ADC0E25DC3A16008050CC /* ForseDemoApp.swift */,
 			);
 			path = Source;
@@ -147,6 +164,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F5E66DC825DC510D0058449B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5E66DE825DC52370058449B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5E66DF325DC537A0058449B /* SuperBasicView.swift */,
+				F53ADC2125DC3AB3008050CC /* HorseView.swift */,
+				F5E66DF025DC532E0058449B /* BindingDemoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +191,8 @@
 				F53ADC0725DC3A16008050CC /* Sources */,
 				F53ADC0825DC3A16008050CC /* Frameworks */,
 				F53ADC0925DC3A16008050CC /* Resources */,
+				F5E66D8825DC509B0058449B /* Embed Frameworks */,
+				F5E66DC325DC50EB0058449B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -247,9 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53ADC2225DC3AB3008050CC /* HorseView.swift in Sources */,
-				F53ADC1125DC3A16008050CC /* ContentView.swift in Sources */,
+				F5E66DDA25DC51C30058449B /* HorseView.swift in Sources */,
+				F5E66DF125DC532E0058449B /* BindingDemoView.swift in Sources */,
 				F53ADC0F25DC3A16008050CC /* ForseDemoApp.swift in Sources */,
+				F5E66DF425DC537A0058449B /* SuperBasicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

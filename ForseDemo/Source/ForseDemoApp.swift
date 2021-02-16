@@ -4,7 +4,7 @@ import SwiftUI
 struct ForseDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HorseView()
         }
     }
 }
