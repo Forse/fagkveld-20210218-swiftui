@@ -29,6 +29,13 @@ struct RootView: View {
             NavigationLink(destination: SimpleObjectBindingView()) {
                 Text("Simple binding")
             }
+
+            NavigationLink(destination:
+                FarmView()
+                    .environmentObject(FarmRepository())
+            ) {
+                Text("Complex binding")
+            }
         }
         .navigationTitle("Forse Fagkveld")
     }
