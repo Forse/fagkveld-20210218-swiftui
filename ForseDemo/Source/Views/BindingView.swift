@@ -14,6 +14,7 @@ struct BindingView: View {
                 Text("Nope! :(")
             }
         }
+        .padding()
     }
 }
 

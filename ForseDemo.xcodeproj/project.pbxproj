@@ -21,6 +21,7 @@
 		F5E66DDA25DC51C30058449B /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC2125DC3AB3008050CC /* HorseView.swift */; };
 		F5E66DF125DC532E0058449B /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E66DF025DC532E0058449B /* BindingView.swift */; };
 		F5E66DF425DC537A0058449B /* SuperBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E66DF325DC537A0058449B /* SuperBasicView.swift */; };
+		F5FE8EE525DC5DB200656466 /* SimpleObjectBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8EE425DC5DB200656466 /* SimpleObjectBindingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +66,7 @@
 		F53ADC6725DC40C5008050CC /* HorseStoryboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseStoryboardView.swift; sourceTree = "<group>"; };
 		F5E66DF025DC532E0058449B /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		F5E66DF325DC537A0058449B /* SuperBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperBasicView.swift; sourceTree = "<group>"; };
+		F5FE8EE425DC5DB200656466 /* SimpleObjectBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObjectBindingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				F5E66DF325DC537A0058449B /* SuperBasicView.swift */,
 				F53ADC2125DC3AB3008050CC /* HorseView.swift */,
 				F5E66DF025DC532E0058449B /* BindingView.swift */,
+				F5FE8EE425DC5DB200656466 /* SimpleObjectBindingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				F5E66DDA25DC51C30058449B /* HorseView.swift in Sources */,
 				F5E66DF125DC532E0058449B /* BindingView.swift in Sources */,
 				F53ADC0F25DC3A16008050CC /* ForseDemoApp.swift in Sources */,
+				F5FE8EE525DC5DB200656466 /* SimpleObjectBindingView.swift in Sources */,
 				F5E66DF425DC537A0058449B /* SuperBasicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
