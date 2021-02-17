@@ -19,6 +19,6 @@ struct SuperBasicView_preview: PreviewProvider {
     static var previews: some View {
         SuperBasicView()
             .previewLayout(.sizeThatFits)
-            .frame(width: 129, height: 72)
+            .frame(width: 150)
     }
 }

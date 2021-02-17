@@ -23,6 +23,10 @@ struct RootView: View {
                     Text("🐴 Horse view")
                 }
 
+                NavigationLink(destination: ModifierDemoView()) {
+                    Text("🎨 Modifier order view")
+                }
+
                 NavigationLink(destination: BindingView()) {
                     Text("↪️ Property binding")
                 }
