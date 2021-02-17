@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F53ADC0F25DC3A16008050CC /* ForseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC0E25DC3A16008050CC /* ForseDemoApp.swift */; };
 		F53ADC1325DC3A18008050CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53ADC1225DC3A18008050CC /* Assets.xcassets */; };
-		F53ADC1625DC3A18008050CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53ADC1525DC3A18008050CC /* Preview Assets.xcassets */; };
 		F53ADC4C25DC3BBE008050CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC4B25DC3BBE008050CC /* AppDelegate.swift */; };
 		F53ADC4E25DC3BBE008050CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC4D25DC3BBE008050CC /* SceneDelegate.swift */; };
 		F53ADC5025DC3BBE008050CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC4F25DC3BBE008050CC /* ViewController.swift */; };
@@ -56,7 +55,6 @@
 		F53ADC0B25DC3A16008050CC /* ForseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53ADC0E25DC3A16008050CC /* ForseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForseDemoApp.swift; sourceTree = "<group>"; };
 		F53ADC1225DC3A18008050CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F53ADC1525DC3A18008050CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F53ADC1725DC3A18008050CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53ADC2125DC3AB3008050CC /* HorseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseView.swift; sourceTree = "<group>"; };
 		F53ADC4925DC3BBE008050CC /* UIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,21 +118,12 @@
 		F53ADC0D25DC3A16008050CC /* ForseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F5B1B35425DC73160071C963 /* ForseDemo.entitlements */,
 				F53ADC1F25DC3A48008050CC /* Source */,
+				F5B1B35425DC73160071C963 /* ForseDemo.entitlements */,
 				F53ADC1225DC3A18008050CC /* Assets.xcassets */,
 				F53ADC1725DC3A18008050CC /* Info.plist */,
-				F53ADC1425DC3A18008050CC /* Preview Content */,
 			);
 			path = ForseDemo;
-			sourceTree = "<group>";
-		};
-		F53ADC1425DC3A18008050CC /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F53ADC1525DC3A18008050CC /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F53ADC1F25DC3A48008050CC /* Source */ = {
@@ -289,7 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53ADC1625DC3A18008050CC /* Preview Assets.xcassets in Resources */,
 				F53ADC1325DC3A18008050CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

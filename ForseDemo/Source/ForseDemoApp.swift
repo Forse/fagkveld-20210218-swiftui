@@ -13,32 +13,44 @@ struct ForseDemoApp: App {
 
 struct RootView: View {
     var body: some View {
-        List {
-            NavigationLink(destination: SuperBasicView()) {
-                Text("Super basic view")
+        ZStack {
+            List {
+                NavigationLink(destination: SuperBasicView()) {
+                    Text("🦴 Super basic view")
+                }
+
+                NavigationLink(destination: HorseView()) {
+                    Text("🐴 Horse view")
+                }
+
+                NavigationLink(destination: BindingView()) {
+                    Text("↪️ Property binding")
+                }
+
+                NavigationLink(destination: SimpleObjectBindingView()) {
+                    Text("↔️ Simple object binding")
+                }
+
+                NavigationLink(destination: KeyboardOffsetView()) {
+                    Text("⌨️ Keyboard offset view")
+                }
+
+                NavigationLink(destination:
+                    FarmView()
+                        .environmentObject(FarmViewModel())
+                ) {
+                    Text("🚜 Bondegård")
+                }
             }
 
-            NavigationLink(destination: HorseView()) {
-                Text("Horse view")
-            }
-
-            NavigationLink(destination: BindingView()) {
-                Text("Binding view")
-            }
-
-            NavigationLink(destination: SimpleObjectBindingView()) {
-                Text("Simple binding")
-            }
-
-            NavigationLink(destination: KeyboardOffsetView()) {
-                Text("Keyboard offset view")
-            }
-
-            NavigationLink(destination:
-                FarmView()
-                    .environmentObject(FarmViewModel())
-            ) {
-                Text("Bondegård 🚜")
+            HStack {
+                Spacer()
+                VStack {
+                    Spacer()
+                    Image("ForseLogo")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                }
             }
         }
         .navigationTitle("Forse Fagkveld")
