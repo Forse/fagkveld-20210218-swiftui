@@ -18,7 +18,8 @@
 		F53ADC5825DC3BBF008050CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53ADC5625DC3BBF008050CC /* LaunchScreen.storyboard */; };
 		F53ADC6225DC3BD7008050CC /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC6125DC3BD7008050CC /* HorseView.swift */; };
 		F53ADC6825DC40C5008050CC /* HorseStoryboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC6725DC40C5008050CC /* HorseStoryboardView.swift */; };
-		F5B1B34825DC67260071C963 /* FarmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1B34725DC67260071C963 /* FarmRepository.swift */; };
+		F569521D25DD67BF007A180F /* KeyboardOffsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F569521C25DD67BF007A180F /* KeyboardOffsetView.swift */; };
+		F5B1B34825DC67260071C963 /* FarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1B34725DC67260071C963 /* FarmViewModel.swift */; };
 		F5B1B34C25DC674D0071C963 /* FarmAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1B34B25DC674D0071C963 /* FarmAnimal.swift */; };
 		F5B1B34F25DC67700071C963 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1B34E25DC67700071C963 /* AnimalType.swift */; };
 		F5E66DDA25DC51C30058449B /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ADC2125DC3AB3008050CC /* HorseView.swift */; };
@@ -68,7 +69,8 @@
 		F53ADC5925DC3BBF008050CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53ADC6125DC3BD7008050CC /* HorseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseView.swift; sourceTree = "<group>"; };
 		F53ADC6725DC40C5008050CC /* HorseStoryboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseStoryboardView.swift; sourceTree = "<group>"; };
-		F5B1B34725DC67260071C963 /* FarmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmRepository.swift; sourceTree = "<group>"; };
+		F569521C25DD67BF007A180F /* KeyboardOffsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardOffsetView.swift; sourceTree = "<group>"; };
+		F5B1B34725DC67260071C963 /* FarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewModel.swift; sourceTree = "<group>"; };
 		F5B1B34B25DC674D0071C963 /* FarmAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmAnimal.swift; sourceTree = "<group>"; };
 		F5B1B34E25DC67700071C963 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 		F5B1B35425DC73160071C963 /* ForseDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForseDemo.entitlements; sourceTree = "<group>"; };
@@ -180,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				F5FE8EEA25DC666A00656466 /* FarmView.swift */,
-				F5B1B34725DC67260071C963 /* FarmRepository.swift */,
+				F5B1B34725DC67260071C963 /* FarmViewModel.swift */,
 				F5B1B34B25DC674D0071C963 /* FarmAnimal.swift */,
 				F5B1B34E25DC67700071C963 /* AnimalType.swift */,
 			);
@@ -202,6 +204,7 @@
 				F53ADC2125DC3AB3008050CC /* HorseView.swift */,
 				F5E66DF025DC532E0058449B /* BindingView.swift */,
 				F5FE8EE425DC5DB200656466 /* SimpleObjectBindingView.swift */,
+				F569521C25DD67BF007A180F /* KeyboardOffsetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,8 +313,9 @@
 			files = (
 				F5E66DDA25DC51C30058449B /* HorseView.swift in Sources */,
 				F5E66DF125DC532E0058449B /* BindingView.swift in Sources */,
+				F569521D25DD67BF007A180F /* KeyboardOffsetView.swift in Sources */,
 				F5FE8EEB25DC666A00656466 /* FarmView.swift in Sources */,
-				F5B1B34825DC67260071C963 /* FarmRepository.swift in Sources */,
+				F5B1B34825DC67260071C963 /* FarmViewModel.swift in Sources */,
 				F53ADC0F25DC3A16008050CC /* ForseDemoApp.swift in Sources */,
 				F5B1B34C25DC674D0071C963 /* FarmAnimal.swift in Sources */,
 				F5FE8EE525DC5DB200656466 /* SimpleObjectBindingView.swift in Sources */,

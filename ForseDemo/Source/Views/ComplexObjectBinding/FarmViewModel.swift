@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-class FarmRepository: ObservableObject {
+class FarmViewModel: ObservableObject {
     @Published var animals: [FarmAnimal] = []
     @Published var isLoading: Bool = false
 
@@ -11,6 +11,7 @@ class FarmRepository: ObservableObject {
         loadCount += 1
         isLoading = true
 
+        // Pretend to do actual work for a random amount of time.
         DispatchQueue.main.asyncAfter(deadline: .now() + .random(in: 0.5 ... 2)) {
             self.animals.append(animal)
             self.loadCount -= 1
@@ -23,6 +24,8 @@ class FarmRepository: ObservableObject {
     func delete(at offsets: IndexSet) {
         loadCount += 1
         isLoading = true
+
+        // Pretend to do actual work for a random amount of time.
         DispatchQueue.main.asyncAfter(deadline: .now() + .random(in: 0.1 ... 0.5)) {
             self.animals.remove(atOffsets: offsets)
             self.loadCount -= 1

@@ -30,11 +30,15 @@ struct RootView: View {
                 Text("Simple binding")
             }
 
+            NavigationLink(destination: KeyboardOffsetView()) {
+                Text("Keyboard offset view")
+            }
+
             NavigationLink(destination:
                 FarmView()
-                    .environmentObject(FarmRepository())
+                    .environmentObject(FarmViewModel())
             ) {
-                Text("Complex binding")
+                Text("Bondegård 🚜")
             }
         }
         .navigationTitle("Forse Fagkveld")

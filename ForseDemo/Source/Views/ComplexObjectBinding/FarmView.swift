@@ -2,16 +2,16 @@ import Foundation
 import SwiftUI
 
 struct FarmView: View {
-    @EnvironmentObject var farmRepository: FarmRepository
+    @EnvironmentObject var viewModel: FarmViewModel
 
     var body: some View {
         ZStack {
             VStack {
-                AnimalListView(farmRepository: farmRepository)
-                AddAnimalView(farmRepository: farmRepository)
+                AnimalListView(viewModel: viewModel)
+                AddAnimalView(viewModel: viewModel)
             }
 
-            if farmRepository.isLoading {
+            if viewModel.isLoading {
                 LoadingView()
             }
         }
@@ -34,11 +34,11 @@ fileprivate struct LoadingView: View {
 }
 
 fileprivate struct AnimalListView: View {
-    @ObservedObject var farmRepository: FarmRepository
+    @ObservedObject var viewModel: FarmViewModel
 
     var body: some View {
         List() {
-            ForEach(farmRepository.animals) { animal in
+            ForEach(viewModel.animals) { animal in
                 VStack {
                     HStack {
                         Text("\(animal.count) x \(animal.animalType.rawValue)")
@@ -54,13 +54,13 @@ fileprivate struct AnimalListView: View {
                         }
                     }
                 }
-            }.onDelete(perform: farmRepository.delete(at:))
+            }.onDelete(perform: viewModel.delete(at:))
         }
     }
 }
 
 fileprivate struct AddAnimalView: View {
-    @ObservedObject var farmRepository: FarmRepository
+    @ObservedObject var viewModel: FarmViewModel
 
     @State private var selectedAnimal: AnimalType = AnimalType.allCases[0]
     @State private var animalCount: Int = 0
@@ -90,10 +90,9 @@ fileprivate struct AddAnimalView: View {
         let animal = FarmAnimal(animalType: selectedAnimal,
                                 count: animalCount,
                                 description: description)
-        farmRepository.addAnimal(animal)
+        viewModel.addAnimal(animal)
 
         // Reset the view
-        selectedAnimal = AnimalType.allCases[0]
         animalCount = 0
         description = ""
 
@@ -104,12 +103,13 @@ fileprivate struct AddAnimalView: View {
 
 struct FarmView_preview: PreviewProvider {
     static var previews: some View {
-        let repo = FarmRepository()
-        repo.isLoading = true
-        repo.animals = [FarmAnimal(animalType: .🐔, count: 10, description: "har ti")]
+        // Simulate the state for the previews
+        let viewModel = FarmViewModel()
+        viewModel.isLoading = true
+        viewModel.animals = [FarmAnimal(animalType: .🐔, count: 10, description: "har ti")]
 
         return FarmView()
             .previewLayout(.sizeThatFits)
-            .environmentObject(repo)
+            .environmentObject(viewModel)
     }
 }
